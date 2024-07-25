@@ -1,4 +1,4 @@
-# digital-notice-board
+# Digital Notice Board
 
 Welcome to the Digital Notice Board project! This project is a customizable web-based notice board designed to keep users updated with important information, announcements, and more.
 
@@ -10,7 +10,6 @@ Welcome to the Digital Notice Board project! This project is a customizable web-
 - Customization
 - Edge Cases and Special Needs
 - Sources
-- License
 
 ## Project Overview
 The Digital Notice Board provides an interactive interface for displaying announcements, quotes, calendar events, and other widgets. The design is responsive and aesthetically pleasing, with a focus on usability and visual appeal.
@@ -53,5 +52,4 @@ The Digital Notice Board provides an interactive interface for displaying announ
 - esponsive Design: MDN Web Docs, A List Apart
 - Accessibility Guidelines: W3C Web Accessibility Initiative
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+
