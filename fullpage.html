@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Notice Board</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+
+</head>
+<body>
+    <div id="header">
+        <div id="hello-message">Welcome! Let’s Make Today Great with Our Latest Updates</div>
+        <div id="date-time-container">
+            <div id="date-date"></div>
+            <div id="date-time"></div>
+        </div>
+    </div>
+
+    <div id="announcements" class="widget">
+        <p id="announcement-text">This is the announcement text. It will scroll continuously from one end of the screen to the other.</p>
+    </div>
+
+
+    <div id="widgets-container">
+        <div id="google-slide" class="widget">
+            <iframe src="https://docs.google.com/presentation/d/1uj6UGFx4V8wNPTq7j7ymNizmp8OhNpro6U33NorhNTA/embed?start=true&loop=true&delayms=3000" width="100%" height="200"></iframe>
+        </div>
+
+        <div id="quote-of-the-day" class="widget">
+            <h3>Quote of the Day</h3>
+            <p id="quote"></p>
+            <p id="author"></p>
+        </div>
+
+        <div id="pomodoro-timer" class="widget">
+            <input type="number" id="timer-input" min="1" max="60" value="25"> minutes
+            <div id="timer">25:00</div>
+            <div>
+                <button id="start-button"><i class="fas fa-play"></i> Start</button>
+                <button id="pause-button"><i class="fas fa-pause"></i> Pause</button>
+                <button id="reset-button"><i class="fas fa-redo"></i> Reset</button>
+            </div>
+            <audio id="alarm-sound" src="mixkit-alarm-clock-beep-988.wav" preload="auto"></audio>
+        </div>
+
+        <div id="google-calendar" class="widget">
+            <iframe src="https://calendar.google.com/calendar/embed?src=aasawari.turna05%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="100%" height="200"></iframe>
+        </div>
+
+        <div id="bottom-widgets">
+            <div id="google-keep" class="widget">
+                <a href="https://keep.google.com/" target="_blank">
+                    <div class="icon-container">
+                        <img src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png" alt="Google Keep Logo">
+                        <span class="tooltip-text">Open Google Keep</span>
+                    </div>
+                </a>
+            </div>
+        
+            <div id="google-meet" class="widget">
+                <a href="https://meet.google.com/" target="_blank">
+                    <div class="icon-container">
+                        <img src="https://www.gstatic.com/images/branding/product/1x/meet_48dp.png" alt="Google Meet Logo">
+                        <span class="tooltip-text">Open Google Meet</span>
+                    </div>
+                </a>
+            </div>
+        
+            <div id="google-form" class="widget">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2mk-xmpCmfoEPIo0wp4hpRSmgLeSqbDGF49XH5INCAVrleA/viewform?vc=0&c=0&w=1&flr=0" target="_blank">
+                    <div class="icon-container">
+                        <img src="https://www.gstatic.com/images/branding/product/1x/forms_48dp.png" alt="Google Form Logo">
+                        <span class="tooltip-text">Open Google Form</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

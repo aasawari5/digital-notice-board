@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    margin: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+h3, h4, h5 {
+    font-family: 'Playfair Display', serif; /* Elegant font for headings */
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+#header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#hello-message {
+    font-size: 2.2em; /* Increased font size */
+    font-family: 'Merriweather', serif; /* Changed font family for hello message */
+    font-weight: bold; /* Optional: Make the text bold */
+    color: #333; /* Dark grey color */
+    margin-bottom: 10px;
+}
+
+#date-time-container {
+    font-size: 1.2em;
+    color: #666;
+    font-family: 'Merriweather', serif;
+}
+
+#date-date {
+    font-size: 1.2em; /* Slightly larger for emphasis */
+    margin-bottom: 5px; /* Space between date and time */
+}
+
+#date-time {
+    font-size: 1em;
+}
+
+#widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.widget {
+    background-color: #e3f2fd; /* Lightest pastel blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    flex: 1 1 300px;
+    text-align: center;
+    position: relative;
+}
+
+#google-slide {
+    background-color: #e3f2fd; /* Lightest pastel blue */
+    border-left: 5px solid #bbdefb; /* Slightly darker pastel blue border */
+}
+
+#quote-of-the-day {
+    background-color: #e3f2fd; /* Lightest pastel blue */
+    border-left: 5px solid #bbdefb; /* Slightly darker pastel blue border */
+}
+
+#pomodoro-timer {
+    background-color: #e3f2fd; /* Lightest pastel blue */
+    border-left: 5px solid #bbdefb; /* Slightly darker pastel blue border */
+}
+
+#google-calendar {
+    background-color: #e3f2fd; /* Lightest pastel blue */
+    border-left: 5px solid #bbdefb; /* Slightly darker pastel blue border */
+}
+
+
+#bottom-widgets {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.widget {
+    position: relative; /* Required for tooltip positioning */
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-container img {
+    width: 48px;
+    height: 48px;
+}
+
+.tooltip-text {
+    position: absolute;
+    bottom: 120%; /* Adjust if needed to position above the icon */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Hide the text */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    z-index: 10; /* Ensure the text appears above other elements */
+}
+
+.icon-container:hover .tooltip-text {
+    opacity: 1; /* Show text on hover */
+    visibility: visible; /* Make text visible */
+}
+
+
+
+#quote {
+    font-size: 1.4em; /* Slightly larger for emphasis */
+    font-family: 'Lora', serif; /* Stylish font for quotes */
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#author {
+    font-size: 1.1em;
+    font-family: 'Lora', serif; /* Stylish font for author */
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+
+.widget img {
+    width: 48px;
+    height: 48px;
+}
+
+.widget a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF; /* Primary blue color */
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#pomodoro-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer-input {
+    width: 60px;
+    text-align: center;
+}
+
+#timer {
+    font-size: 2.2em; /* Slightly larger for emphasis */
+    font-family: 'Roboto', sans-serif; /* Modern font for timer */
+    margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .widget {
+        flex: 1 1 100%;
+    }
+
+    #header {
+        text-align: center;
+    }
+}
+
+#announcements {
+    background-color: #ffffff; /* White background */
+    border-left: 5px solid #e3f2fd; /* Lightest pastel blue border */
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Cover the full width of the page */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    max-height: 40px; /* Adjust height to fit the content */
+}
+
+#announcements p {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif; /* Modern font for announcements */
+    font-weight: bold;
+    color: transparent; /* Hide original text color */
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); /* Rainbow gradient */
+    background-clip: text; /* Apply gradient to text */
+    -webkit-background-clip: text; /* Webkit-specific for text gradient */
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Digital Notice Board",
+  "version": "1.0",
+  "description": "A digital notice board with Google integrations.",
+  "action": {
+    "default_icon": {
+      "16": "logo10.png",
+      "48": "logo48.png",
+      "100": "logo100.png"
+    }
+  },
+  "icons": {
+    "16": "logo10.png",
+    "48": "logo48.png",
+    "100": "logo100.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
