@@ -6,12 +6,10 @@ Welcome to the Digital Notice Board project! This project is a customizable web-
 - Project Overview
 - Features
 - Technologies Used
-- Setup Instructions
 - Usage
 - Customization
 - Edge Cases and Special Needs
 - Sources
-- Contributing
 - License
 
 ## Project Overview
